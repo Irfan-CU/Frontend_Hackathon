@@ -1,0 +1,41 @@
+<div class="container mat-elevation-z8">
+    <div class="col d-flex justify-content-center form">
+        <form [formGroup] = "myform" (ngSubmit)="onSubmit()" >
+          <mat-card class="mat-elevation-z8" >
+            <div class="row" style="text-align: center; color: green; font-family: sans-serif;">
+              <mat-card-title>Please Login</mat-card-title>
+            </div>
+            <div>
+                
+              <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Username</mat-label>
+                  <input type="text" matInput formControlName="usernameFormControl" placeholder="John Doe">
+                </mat-form-field>
+                <mat-error *ngIf="myform.controls['usernameFormControl'].errors">
+                  Username is <strong>required</strong>
+                </mat-error>          
+          </div>
+          <div>
+              
+              <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label >Password</mat-label>
+                  <input type="text" matInput formControlName="passwordFormControl" placeholder="*****">
+                </mat-form-field>
+                <mat-error *ngIf="myform.controls['passwordFormControl'].errors">
+                  Password is <strong>required</strong>
+                </mat-error>          
+          </div>
+          <div class="row">
+            <button type="submit" mat-raised-button color="accent" style="margin-top: 10%;">Login</button>
+          <div class="alert">
+                  {{message}}
+          </div>
+          
+          </div>
+          </mat-card>  
+         
+          </form>
+    </div>
+</div>
+
+  

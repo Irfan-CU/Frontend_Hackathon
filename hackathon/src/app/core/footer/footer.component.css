@@ -1,0 +1,23 @@
+footer {
+    position: fixed;
+    
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(48, 44, 44);
+
+    
+}
+.col h1 {
+    padding-left: 4%;
+}
+.col h1,h3{
+    color: white;
+}
+.list-unstyled li{
+    color: white;
+}
+.Resources
+{
+    padding-left: 32%;
+}

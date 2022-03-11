@@ -1,0 +1,12 @@
+.mat-card{
+    color: Red;
+    height: 750px;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 25%;
+    border: solid green;
+    border-radius: 10px;
+}
+.mat-card button{
+    margin-top: 5%;
+}

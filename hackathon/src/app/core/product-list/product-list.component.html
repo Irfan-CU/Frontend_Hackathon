@@ -1,0 +1,22 @@
+<div id ="issues">
+    <div class="container">  
+        <!-- write logic to ngFor Directive to display all issues-->
+    <div class="col-12">
+        <div class="row" *ngFor="let product of productsList" style="display: inline-flex;">
+            <div class="column">
+              <div class="card">
+                          <div class="card-block">
+                            <div class="card-text">{{product.id}}</div>  
+                            <div class="card-text">{{product.ProductName}}</div>
+                            <div class="card-text">{{product.Qty}}</div>
+                           </div>
+                           <!-- write logic to call deleteIssue method by passing issue id on click of button -->
+                      <button>Product Details</button>
+                      </div>
+                  <div>
+              </div>
+          </div>
+    </div>
+    
+</div>
+    

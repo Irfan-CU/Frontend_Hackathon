@@ -1,0 +1,45 @@
+<div id = "Issue">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form [formGroup]="productform" (ngSubmit)=" onSubmit()">
+                                           
+                    <div class="row">
+                      <div class="col-25">
+                        <label>Product Name</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea formControlName="ProductName" placeholder="Enter Product Name" style="height:140px"></textarea>
+                      </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-25">
+                          <label>Product Quantity</label>
+                        </div>
+                        <div class="col-75">
+                          <textarea formControlName="Qty" placeholder="Enter Product Quantity" style="height:140px"></textarea>
+                        </div>
+                      </div>
+              
+                    <div class="row">
+                      <div class="col-6">
+                        <input class="btn" type="submit" value="Add Product">
+                      </div>
+                      
+                    </div>
+                  </form>    
+              
+                       <!-- write logic to display message if form is submitted-->
+                    <div class="alert" >
+                      {{message}}
+                    </div>
+            </div>
+    
+            <div class="col-6">
+                <app-product-list></app-product-list>
+            </div>
+        </div>       
+    </div>
+  </div>
+    

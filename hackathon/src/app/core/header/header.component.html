@@ -1,0 +1,23 @@
+<p>
+    <mat-toolbar color="basic" class="mat-elevation-z8">
+
+      <button mat-icon-button class="material-icons" aria-label="Example icon-button with menu icon" color="warn">
+        <mat-icon>language</mat-icon>
+      </button>
+
+      <span>Organic World</span>
+
+      <div class ="spacer"></div>
+
+      <button mat-button color="black" routerLink = "home" >Home</button>
+      
+      <button mat-button color="black" routerLink = "productlist">Products</button>
+
+      <button mat-button color="black" routerLink = "dashboard">Dashboard</button>
+
+      <button mat-raised-button color="accent" routerLink = "login">Login</button>
+
+      <button mat-raised-button color="warn" routerLink = "login" style="margin-left: 1%;" (click)="onLogout()">Logout </button>
+
+    </mat-toolbar>
+  </p>
